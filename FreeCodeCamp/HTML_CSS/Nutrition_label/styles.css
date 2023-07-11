@@ -10,6 +10,10 @@ html {
   font-size: 16px;
 }
 
+.bold {
+  font-weight: 800;
+}
+
 .label {
   border: 2px solid black;
   width: 270px;
@@ -18,7 +22,6 @@ html {
 }
 
 h1 {
-  font-weight: 800;
   text-align: center;
   margin: -4px 0;
   letter-spacing: 0.15px;
