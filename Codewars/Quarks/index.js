@@ -6,9 +6,7 @@ class Quark {
   }
 
   interact(anotherQuark) {
-    const anotherQuarkColor = anotherQuark.color
-    anotherQuark.color = this.color
-    this.color = anotherQuarkColor
+    [this.color, anotherQuark.color] = [anotherQuark.color, this.color]
   }
 }
 
