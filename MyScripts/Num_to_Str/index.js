@@ -81,7 +81,7 @@ const numToStr = (num) => {
     if (i !== numChunks.length - 1) resultArr.unshift('thousand')
   }
 
-  return resultArr.flat().at(-1) === 'zero' && !resultArr.flat().length ? resultArr.flat().splice(0, resultArr.flat().length - 1).join(' ') : resultArr.flat().join(' ')
+  return resultArr.flat().at(-1) === 'zero' && resultArr.flat().length > 1 ? resultArr.flat().splice(0, resultArr.flat().length - 1).join(' ') : resultArr.flat().join(' ')
 }
 
 console.log(numToStr(0))
